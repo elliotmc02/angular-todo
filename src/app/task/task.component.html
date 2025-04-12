@@ -1,0 +1,4 @@
+<div [className]="task.completed && 'completed'">
+    <span (click)="toggleCompletion()">{{ task.name }}</span>
+    <button (click)="removeTask()">Remove task</button>
+</div>

@@ -1,0 +1,7 @@
+div {
+    display: flex;
+}
+
+.completed span {
+    text-decoration: line-through;
+}

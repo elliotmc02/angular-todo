@@ -1,0 +1,4 @@
+<div>
+    <app-task *ngFor="let task of tasks" [task]="task" (removeTaskEvent)="removeTask($event)"
+        (toggleCompletionEvent)="toggleTaskCompletion($event)"></app-task>
+</div>
