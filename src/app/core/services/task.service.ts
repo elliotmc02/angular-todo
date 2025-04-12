@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Task } from './task.model';
+import { Task } from '../../shared/models/task.model';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class TaskService {
   private nextId = 1;
   private tasksSubject = new BehaviorSubject<Task[]>([]);

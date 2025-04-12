@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { TaskComponent } from '../task/task.component';
-import { Task } from '../task/task.model';
-import { TaskService } from '../task/task.service';
-import { CommonModule } from '@angular/common';
+import { TaskService } from '../../../../core/services/task.service';
+import { Task } from '../../../../shared/models/task.model';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
-  imports: [CommonModule, TaskComponent],
+  standalone: false,
 })
 export class ListComponent {
   tasks: Task[] = [];

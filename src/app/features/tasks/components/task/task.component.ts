@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Task } from './task.model';
+import { Task } from '../../../../shared/models/task.model';
 
 @Component({
   selector: 'app-task',
   templateUrl: './task.component.html',
-  styleUrl: './task.component.css',
+  styleUrls: ['./task.component.css'],
+  standalone: false
 })
 export class TaskComponent {
   @Input() task!: Task;

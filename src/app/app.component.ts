@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { ListComponent } from './list/list.component';
-import { TaskService } from './task/task.service';
+import { TaskService } from './core/services/task.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [ListComponent, FormsModule],
+  standalone: false,
 })
 export class AppComponent {
   taskName: string = '';

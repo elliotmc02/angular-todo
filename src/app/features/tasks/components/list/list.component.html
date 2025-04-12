@@ -1,4 +1,5 @@
 <div>
     <app-task *ngFor="let task of tasks" [task]="task" (removeTaskEvent)="removeTask($event)"
         (toggleCompletionEvent)="toggleTaskCompletion($event)"></app-task>
+    <span *ngIf="tasks.length === 0">No tasks</span>
 </div>
